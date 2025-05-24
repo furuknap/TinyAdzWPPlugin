@@ -1,0 +1,236 @@
+/**
+ * TinyAdz Admin Styles
+ *
+ * Styles for the TinyAdz WordPress plugin admin interface.
+ *
+ * @package TinyAdzWPPlugin
+ * @since 1.0.0
+ */
+
+/* Settings page styling */
+.tinyadz-settings-page {
+    max-width: 800px;
+}
+
+.tinyadz-settings-page h1 {
+    margin-bottom: 20px;
+}
+
+/* Section styling */
+.tinyadz-settings-page .form-table {
+    margin-top: 20px;
+}
+
+.tinyadz-settings-page .form-table th {
+    width: 200px;
+    padding: 15px 10px 15px 0;
+    vertical-align: top;
+}
+
+.tinyadz-settings-page .form-table td {
+    padding: 15px 10px;
+    vertical-align: top;
+}
+
+/* Field styling */
+.tinyadz-settings-page input[type="text"],
+.tinyadz-settings-page input[type="number"] {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.tinyadz-settings-page input[type="text"]:focus,
+.tinyadz-settings-page input[type="number"]:focus {
+    border-color: #0073aa;
+    box-shadow: 0 0 0 1px #0073aa;
+    outline: none;
+}
+
+.tinyadz-settings-page input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.tinyadz-settings-page select[multiple] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Description styling */
+.tinyadz-settings-page .description {
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+/* Section headers */
+.tinyadz-settings-page h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Settings sections */
+.tinyadz-settings-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.tinyadz-settings-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Submit button styling */
+.tinyadz-settings-page .submit {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.tinyadz-settings-page .button-primary {
+    background: #0073aa;
+    border-color: #0073aa;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.tinyadz-settings-page .button-primary:hover {
+    background: #005a87;
+    border-color: #005a87;
+}
+
+/* Error and success messages */
+.tinyadz-settings-page .notice {
+    margin: 20px 0;
+    padding: 12px;
+    border-left: 4px solid;
+    border-radius: 0 4px 4px 0;
+}
+
+.tinyadz-settings-page .notice-success {
+    border-left-color: #46b450;
+    background-color: #f7fcf0;
+}
+
+.tinyadz-settings-page .notice-error {
+    border-left-color: #dc3232;
+    background-color: #fef7f1;
+}
+
+/* Responsive design */
+@media screen and (max-width: 782px) {
+    .tinyadz-settings-page .form-table th,
+    .tinyadz-settings-page .form-table td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .tinyadz-settings-page .form-table th {
+        border-bottom: none;
+        padding-bottom: 5px;
+    }
+    
+    .tinyadz-settings-page input[type="text"],
+    .tinyadz-settings-page input[type="number"],
+    .tinyadz-settings-page select[multiple] {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* Help text styling */
+.tinyadz-help-text {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.tinyadz-help-text h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.tinyadz-help-text ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.tinyadz-help-text li {
+    margin-bottom: 5px;
+}
+
+/* Field groups */
+.tinyadz-field-group {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.tinyadz-field-group h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Status indicators */
+.tinyadz-status-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.tinyadz-status-indicator.enabled {
+    background-color: #46b450;
+}
+
+.tinyadz-status-indicator.disabled {
+    background-color: #dc3232;
+}
+
+/* Loading states */
+.tinyadz-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.tinyadz-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ddd;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: tinyadz-spin 1s linear infinite;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+@keyframes tinyadz-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
